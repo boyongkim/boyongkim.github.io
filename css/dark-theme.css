@@ -1,0 +1,57 @@
+:root {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --primary-color: #e91e63;
+    --secondary-color: #333;
+    --box-background-color: #1f1f1f;
+    --border-color: #333;
+    --hover-color: #d81b60;
+    --hover-color-light: #b8788f;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header and Navigation */
+.header {
+    background-color: var(--secondary-color);
+}
+
+/* Links and Buttons */
+.nav-links a {
+    color: var(--text-color);
+}
+
+.nav-links a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+}
+
+.cta-button:hover {
+    background-color: var(--hover-color);
+}
+
+.cta-button.secondary {
+    background-color: var(--secondary-color);
+}
+
+.cta-button.secondary:hover {
+    background-color: var(--box-background-color);
+}
+
+/* Boxes and Content Sections */
+.box {
+    background-color: var(--box-background-color);
+    border: 1px solid var(--border-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--secondary-color);
+}

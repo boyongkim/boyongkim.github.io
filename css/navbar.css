@@ -1,0 +1,86 @@
+.header {
+    background-color: #333;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hide the nav links on mobile by default */
+.nav-links {
+    display: flex;
+}
+
+.nav-links.mobile-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px; /* Adjust based on navbar height */
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.nav-links.mobile-menu.show {
+    display: flex;
+}
+
+.nav-links.mobile-menu li {
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav-links.mobile-menu a {
+    display: block;
+    color: white;
+}
+
+/* Toggle button styles */
+.menu-toggle {
+    display: none;
+    background-color: #333;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
